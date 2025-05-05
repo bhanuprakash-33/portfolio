@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="flex-1 flex justify-center relative">
           <div className="relative w-full max-w-sm rounded-full scale-90 md:scale-100 md:rounded-3xl overflow-hidden shadow-2xl border border-white/10 z-10">
             <img
-              src="./bhanu.jpg"
+              src="bhanu.jpg"
               alt="Professional Bhanu"
               className="object-cover w-full h-full"
             />
