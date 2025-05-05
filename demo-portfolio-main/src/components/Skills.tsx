@@ -4,8 +4,8 @@ import { Code2, Database, Settings2 } from 'lucide-react';
 const skills = [
   { icon: Code2, label: 'C', span: 'col-span-1', category: 'lang' },
   { icon: Code2, label: 'JAVA', span: 'col-span-2', category: 'lang' },
-  { icon: Code2, label: 'Python', span: 'col-span-1', category: 'lang' },
-  { icon: Code2, label: 'C++', span: 'col-span-1', category: 'lang' },
+  { icon: Code2, label: 'Python', span: 'col-span-2 md:col-span-1', category: 'lang' },
+  { icon: Code2, label: 'C++', span: 'col-span-1 row-span-3 md:row-span-1', category: 'lang' },
   {
     icon: Code2,
     label: 'HTML',
@@ -23,7 +23,7 @@ const skills = [
   { icon: Database, label: 'MySQL', span: 'col-span-2', category: 'db' },
   { icon: Settings2, label: 'Git', span: 'col-span-2', category: 'tool' },
   { icon: Settings2, label: 'Prodigy', span: 'col-span-1', category: 'tool' },
-  { icon: Settings2, label: 'Trailhead', span: 'col-span-1', category: 'tool' },
+  { icon: Settings2, label: 'Trailhead', span: 'col-span-2 md:col-span-1', category: 'tool' },
 ];
 
 const categoryStyles = {
@@ -68,7 +68,7 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className={`flex flex-col justify-between p-4 ${span} bg-white/10 border border-white/20 rounded-xl backdrop-blur-md shadow-md hover:scale-105 transition-transform duration-300 ${
+                className={`flex flex-col justify-start p-4 ${span} bg-white/10 border border-white/20 rounded-xl backdrop-blur-md shadow-md hover:scale-105 transition-transform duration-300 ${
                   isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
